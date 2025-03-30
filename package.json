@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel Reactwork.html",
-    "build": "parcel build reactwork.html"
+    "build": "parcel build Reactwork.html"
   },
   "author": "",
   "license": "ISC",
