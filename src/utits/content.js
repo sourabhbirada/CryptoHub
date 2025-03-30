@@ -216,10 +216,10 @@ export const CardData = [
         }
     }
 ]
+const BASE_URL = process.env.REACT_APP_COINGECKO_BASE_URL;
+const API = process.env.REACT_APP_COINGECKO_API_KEY;
 
 TEMP = "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false"
-
-export const API= 'CG-wSym8XLWp8MrPpzsS39YKsMu'
 export const API_KEY = `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=2&sparkline=false&api_key=${API}`;
 
 export const COIN_API_KEY = `https://api.coingecko.com/api/v3/coins/`

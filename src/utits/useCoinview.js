@@ -9,6 +9,7 @@ const useCoinview = (coinid) => {
     const fetchdata = async () => {
         try {
           const response = await fetch(`${COIN_API_KEY}${coinid}?api_key=${API}`);
+          console.log(response)
           if (!response.ok) {
             throw new Error(`Failed to fetch coin data for ${coinid}`);
           }

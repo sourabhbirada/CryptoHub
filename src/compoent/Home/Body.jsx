@@ -93,7 +93,7 @@ const Body = () => {
 
       {/* Filter and Search Section */}
       <motion.div
-        className="flex flex-col justify-between md:flex-row gap-6 items-center mr-6 bg-gray-50 p-6 rounded-xl shadow-sm"
+        className="flex flex-col justify-between md:flex-row gap-6 items-center mr-6  p-6 rounded-xl shadow-sm"
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.2 }}

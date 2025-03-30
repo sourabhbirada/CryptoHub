@@ -59,7 +59,7 @@ const TrendingCard = () => {
   const fetchPriceData = async (coinId) => {
     try {
       const response = await fetch(
-        `https://api.coingecko.com/api/v3/coins/${coinId}/market_chart?vs_currency=usd&days=7&api_key=${API}`
+        `https://api.coingecko.com/api/v3/coins/${coinId}/market_chart?vs_currency=usd&days=7&api_key=${process.env.REACT_APP_COINGECKO_API_KEY}`
       );
       const data = await response.json();
       setPriceData((prev) => ({
