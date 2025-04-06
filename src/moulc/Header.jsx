@@ -19,13 +19,13 @@ const Header = () => {
             <div className="container mx-auto px-6 py-3 flex justify-between items-center">
                 {/* Logo */}
                 <Link to='/' className="flex items-center space-x-2 group">
-                    <img
+                    {/* <img
                         alt="Logo"
                         src={image}
                         className="h-12 w-12 transition-transform duration-300 group-hover:rotate-12"
-                    />
+                    /> */}
                     <span className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-500">
-                        CryptoDash
+                        CryptoWatch
                     </span>
                 </Link>
 
@@ -51,6 +51,14 @@ const Header = () => {
                     >
                         <FiMail className="mr-2" />
                         <span>Contact</span>
+                    </Link>
+
+                    <Link 
+                        to='/price' 
+                        className="flex items-center text-gray-300 hover:text-purple-400 transition-colors duration-300"
+                    >
+                        {/* <FileSystemEntry className="mr-2" /> */}
+                        <span>Price</span>
                     </Link>
                     
                     {/* User Status */}

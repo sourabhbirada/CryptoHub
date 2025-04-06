@@ -9,9 +9,10 @@ import Errorhandling from './moulc/Error';
 import About from './compoent/About';
 import Contact from './compoent/Contact'
 import Coinview  from './compoent/Coinview';
-import Login   from './compoent/Coinview';
+import Login   from './compoent/Login';
 import Usercontext  from './utits/UserContext'
 const Stockmarket = lazy(()=>  import('./compoent/Stockmarket'));
+const Price = lazy(() => import('./compoent/price/Pricing') )
 
 
 const App = () => {
@@ -20,7 +21,7 @@ const App = () => {
 
   useEffect(() => {
     const data = {
-      name:"sourabh"
+      name:""
     }
 
     setuserinfo(data.name);
@@ -64,6 +65,12 @@ const AppRoutes = () => {
           path:'/stock',
           element:<Suspense fallback ={<h1>Loaidng....</h1>}>
             <Stockmarket/>
+          </Suspense>
+        },
+        {
+          path:'/price',
+          element:<Suspense fallback = {<h1>Wait.....</h1>}>
+            <Price/>
           </Suspense>
         }
       ]
